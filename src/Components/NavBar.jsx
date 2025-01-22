@@ -2,28 +2,38 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <>
-      <div className="flex flex-row mt-2 mb-5">
-        <h1 className=" font-bold text-3xl ml-5  hover:text-lime-600 hover:font-bold transition-all duration-300 ease-in-out">
-          <Link to="/">WikipediaLinkTree</Link>
+    <nav className="bg-slate-800 text-white py-4 shadow-lg">
+      <div className="flex ml-5 items-center">
+        {/* Logo/Title */}
+        <h1 className="text-3xl font-bold ml-5">
+          <Link
+            to="/"
+            className="hover:text-lime-400 hover:scale-105 transition-transform duration-300"
+          >
+            WikipediaLinkTree
+          </Link>
         </h1>
-
-        <a
-          href="https://www.mediawiki.org/wiki/API:Main_page"
-          target="blank"
-          className="ml-auto mr-3 text-lg hover:text-red-600 hover:font-bold transition-all duration-300 ease-in-out"
-        >
-          wikipediaAPI
-        </a>
-        <a
-          href="https://github.com/robinsrarf/"
-          target="blank"
-          className=" mr-10 text-lg hover:text-teal-600 hover:font-bold transition-all duration-300 ease-in-out"
-        >
-          github
-        </a>
+        {/* Links */}
+        <div className="ml-auto flex space-x-6 mr-0">
+          <a
+            href="https://www.mediawiki.org/wiki/API:Main_page"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-lg hover:text-red-500 transition-all duration-300"
+          >
+            Wikipedia API
+          </a>
+          <a
+            href="https://github.com/robinsrarf/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-lg pr-10 hover:text-teal-400 transition-all duration-300"
+          >
+            GitHub
+          </a>
+        </div>
       </div>
-    </>
+    </nav>
   );
 }
 
