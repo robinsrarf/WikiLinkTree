@@ -3,7 +3,7 @@
 A React-based project that visualizes Wikipedia articles in a dynamic, interactive tree structure using the Wikipedia API and D3.js. This project leverages a force-directed graph layout to represent links between articles, allowing users to explore related topics visually.
 
 ## Demo
-![WikiLinkTree Preview](demo.png)
+![WikiLinkTree Preview](demo.png) 
 *Screenshot showing the force-directed tree visualization of Wikipedia article on Pokémon.*
 
 ## Features
