@@ -1,8 +1,4 @@
-import {
-  RouterProvider,
-  createBrowserRouter,
-  HashRouter,
-} from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Navbar from "./Components/NavBar.jsx";
 import HomePage from "./Components/HomePage.jsx";
 import ForceDirectedTree from "./Components/WikiGraph.jsx";
@@ -29,10 +25,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return (
-    <HashRouter>
-      <RouterProvider router={router} />
-    </HashRouter>
-  );
+  return <RouterProvider router={router} />;
 }
+
 export default App;
